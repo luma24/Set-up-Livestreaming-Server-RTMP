@@ -165,8 +165,11 @@ sudo ufw status
 
 #### Resources 
 [peer5](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
+
 [Nerd on the Street,YouTube video](https://www.youtube.com/watch?v=Y-9kVF6bWr4)
+
 [OBS](https://obsproject.com/forum/resources/how-to-set-up-your-own-private-rtmp-server-using-nginx.50/)
+
 [NXTLVLCO, YouTube video](https://www.youtube.com/watch?v=O9ZN7AeOq2I)
 
 
