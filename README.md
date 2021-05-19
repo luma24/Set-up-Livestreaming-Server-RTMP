@@ -112,8 +112,47 @@ http {
 ```
 #### Things you need to know about the nginx.conf file
 1- Your application name is show (You can use any name)
+
 2- The server listen to port 8080
+
 3- The hls path is /nginx/hls
+#### Created nginx/hls and hls directories and change the ownership to be owend by www-data 
+```
+sudo  /usr/local/nginx/sbin/nginx
+mkdir /nginx
+mkdir/nginx/hls
+sudo chown -R www-data:www-data /nginx/
+ls -al /nginx
+```
+
+#### Test the configuration file then start nginx
+```
+/usr/local/nginx/sbin/nginx -t
+/usr/local/nginx/sbin/nginx 
+```
+## Testing!
+#### Your server should now be ready to accept RTMP streams!
+#### Download OBS from this [link](https://obsproject.com/download)
+#### You will need a platform  like 'vlc' to test your streaming, Download VLC from this [link](https://www.videolan.org/vlc/index.en_GB.html)
+
+#### In OBS create a new profile, and change your Broadcast Settings thusly:
+```
+Streaming Service: Custom
+Server: rtmp://<your server ip>/show
+Play Path/Stream Key: stream
+```
+#### vlc syntax
+``` 
+http://your server ip:8080/hls/stream.m3u8
+```
+
+#### To check the streaming files on the vm and the rtmp service
+```
+cd /nginx/hls/
+ls -al
+# to check the rtmp service 
+netstat -plntu | grep 1935
+```
 
 
 
