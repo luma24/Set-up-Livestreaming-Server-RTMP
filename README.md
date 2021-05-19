@@ -154,6 +154,15 @@ ls -al
 netstat -plntu | grep 1935
 ```
 
+#### You might you need to allow thes ports on your machine
+```
+sudo ufw allow 8080
+sudo ufw allow 1935
+sudo ufw enable
+sudo ufw status 
+```
+#### NOTE: If you're using AWS instance make sure that your security inbound group role has these two ports open
+
 
 
  
