@@ -163,7 +163,7 @@ sudo ufw enable
 sudo ufw status 
 ```
 #### NOTE: If you're using AWS instance make sure that your security inbound group role has these two ports open
-##### 8080 and 1935
+##### 8080, 80 and 1935
 
 #### Resources 
 [peer5](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
