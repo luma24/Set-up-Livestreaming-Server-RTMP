@@ -34,6 +34,7 @@ ssh to your machine using putty or powershell
  
  #### Now Compile/build nginx:
  ```
+ cd nginx-1.20.0
  ./configure --with-http_ssl_module --add-module=../nginx-rtmp-module-dev
  make
 sudo make install
