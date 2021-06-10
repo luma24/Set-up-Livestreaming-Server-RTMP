@@ -120,7 +120,6 @@ http {
 3- The hls path is /nginx/hls
 #### Created nginx/hls and hls directories and change the ownership to be owend by www-data 
 ```
-sudo  /usr/local/nginx/sbin/nginx
 mkdir /nginx
 mkdir/nginx/hls
 sudo chown -R www-data:www-data /nginx/
@@ -129,8 +128,8 @@ ls -al /nginx
 
 #### Test the configuration file then start nginx
 ```
-/usr/local/nginx/sbin/nginx -t
-/usr/local/nginx/sbin/nginx 
+sudo /usr/local/nginx/sbin/nginx -t
+sudo /usr/local/nginx/sbin/nginx 
 ```
 ## Testing!
 #### Your server should now be ready to accept RTMP streams!
